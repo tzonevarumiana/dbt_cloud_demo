@@ -5,7 +5,7 @@ customers as (
 select
     cust_id as cust_id,
     cust_name as name,
-    cust_country as country
+    {{ replace_britain('cust_country') }} as country
 from source
 )
  
